@@ -1,0 +1,21 @@
+@mixin max
+	@media screen and (max-width: 1199px)
+		@content
+@mixin xl
+	@media screen and (max-width: 1169px)
+		@content
+@mixin md
+	@media screen and (max-width: 992px)
+		@content
+@mixin tablet
+	@media screen and (max-width: 880px)
+		@content
+@mixin sm
+	@media screen and (max-width: 640px)
+		@content
+@mixin xs
+	@media screen and (max-width: 479px)
+		@content
+
+@mixin has-transition($name)
+	transition: $name .3s ease-in-out

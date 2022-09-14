@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap')
+@import 'mixins'
+
+\:root
+	--background-color: #101010
+	--background-color-dark: #010101
+	--title-color: #ffffff
+	--text-color: #ffffff
+	--p-color: #9A9A9A
+	--text-color-invert: #000000
+	--accent-color: #E7C35D
+	--secondary-color: #A8A8A8
+	--text-font: 'Montserrat'
+	--border-radius: 24px
+
+	--button-text-color: #ffffff
+	--button-background-color: transparent
+	--button-border-color: #E7C35D
+	--button-text-color-hover: #000000
+	--button-background-color-hover: #E7C35D
+	--button-border-color-hover: #E7C35D
+
+	.secondary 
+		--button-text-color: #9A9A9A
+		--button-background-color: transparent
+		--button-border-color: #9A9A9A
+		--button-text-color-hover: #ffffff
+		--button-background-color-hover: #9A9A9A
+		--button-border-color-hover: #9A9A9A
+
+	--h1-font-size: 36px
+	--h1-line-height: 1.31
+	--h1-font-weight: 500
+	
+	--h2-font-size: 36px
+	--h2-line-height: 1.47
+	--h2-font-weight: 500
+
+	--h3-font-size: 30px
+	--h3-line-height: 1.77
+	--h3-font-weight: 500
+
+	--h4-font-size: 20px
+	--h4-line-height: 1.2
+	--h4-font-weight: 700
+
+	--h5-font-size: 18px
+	--h5-line-height: 1.33
+	--h5-font-weight: 400
+
+	--h6-font-size: 16px
+	--h6-line-height: 1.5
+	--h6-font-weight: 500
+
+	--p-font-size: 16px
+	--p-line-height: 1.69
+	--p-font-weight: 400
+
+	--small-font-size: 14px
+	--small-line-height: 1.36
+	--small-font-weight: 400
+
+@for $i from 1 through 6
+	$elem: h#{$i}
+	$size: var(--#{$elem}-font-size)
+	$height: var(--#{$elem}-line-height)
+	$weight: var(--#{$elem}-font-weight)
+	h#{$i}
+		font-size: #{$size}
+		font-weight: #{$weight}
+		line-height: #{$height}
+		color: var(--title-color)
+p
+	font-size: var(--p-font-size)
+	font-weight: var(--p-font-weight)
+	line-height: var(--p-line-height)
+	color: var(--p-color)
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	outline: none
+	&::selection
+		color: #ffffff
+		background-color: var(--accent-color)
+
+body, html
+	font-size: var(--p-font-size)
+	font-weight: var(--p-font-weight)
+	color: var(--text-color)
+	font-family: var(--text-font)
+	position: relative
+	scroll-behavior: smooth
+	background-color: var(--background-color-dark)
+	-webkit-font-smoothing: antialiased
+	&.no-scroll
+		height: 100vh
+		overflow: hidden
+
+section
+	overflow: hidden
+
+ul, ol
+	list-style-position: inside
+
+.hidden 
+	display: none
+.container
+	width: 100%
+	max-width: 1270px
+	margin: 0 auto
+	padding: 0 15px
+	@include xl
+		padding: 0 20px
+	
+.home-main
+	padding: 0 20px
+	overflow-x: hidden
+	.container
+		@include xl
+			padding-left: 0
+			padding-right: 0
+
+.divider
+	display: block
+	width: 100%
+	height: 1px
+	background: #303030
+	margin: 0 auto
+
+.button
+	display: inline-flex
+	align-items: center
+	align-content: center
+	justify-content: center
+	padding: 12px 35px
+	font-weight: 400
+	font-size: 18px
+	line-height: 1
+	color: var(--button-text-color)
+	background-color: var(--button-background-color)
+	border-radius: var(--border-radius)
+	box-shadow: none
+	border: 2px solid var(--button-border-color) 
+	appearance: none
+	cursor: pointer
+	transition: background-color .3s ease-in-out, border-color .3s ease-in-out
+	font-family: var(--text-font)
+	width: 206px
+	max-width: 100%
+	min-height: 48px
+	text-align: center
+	text-decoration: none
+	text-transform: normal
+	user-select: none
+	.icon 
+		width: 14px
+		height: 14px
+		color: var(--button-border-color) 
+	&:hover
+		color: var(--button-text-color-hover)
+		background-color: var(--button-background-color-hover)
+		border-color: var(--button-border-color-hover)
+		.icon 
+			color: var(--button-text-color-hover)
+	img 
+		margin-right: 10px
+	&.centered
+		margin: 0 auto
+
+input:not([type="checkbox"]),
+textarea
+	appearance: none
+	width: 100%
+	height: 38px
+	background-color: transparent
+	border: none
+	border-bottom: 1px solid #7c7c7c
+	border-radius: 0
+	margin-bottom: 20px
+	padding: 0
+	font-size: 14px
+	font-weight: 400
+	font-family: var(--text-font)
+	color: #666666
+	caret-color: #E7C35D
+	&.error
+		border-color: red
+	&::placeholder 
+		color: #666666
+@include sm 
+	\:root
+		--h1-font-size: 24px
+		--h2-font-size: 24px
+		--h3-font-size: 22px
+		--p-font-size: 14px
+
+	.mobile-hidden
+		display: none
