@@ -329,214 +329,27 @@
 							<a href="">Главная</a>
 						</li>
 						<li class="breadcrumbs-item">
-							<a href="">Корзина</a>
-						</li>
-                        <li class="breadcrumbs-item">
-							<p>Оформление заказа</p>
+							<p>Личный кабинет</p>
 						</li>
 					</ul>
-					<h1 class="page-name">Оформление заказа</h1>
 				</div>
 			</div>
 		</div>
 
-        <div class="order-wrapper">
+        <div class="reset-wrapper">
             <div class="container">
-                <div class="order__inner">
-                    <form action="" class="order__form">
-                        <div class="order__left">
-                            <div class="order__checkboxLine">
-                                <p class="order__checkboxLine-title">Выберите способ получения заказа:</p>
-                                <div class="order__checkboxLine-line">
-									<div class="order__line">
-										<div class="label-block">
-											<input class="js-select-page" type="radio" id="delivery1" name="delivery" checked data-select-page="delivery" data-select-warning="">
-											<label for="delivery1">
-												<p>Доставка</p>
-											</label>
-										</div>
-										<div class="label-block">
-											<input class="js-select-page" type="radio" id="delivery2" name="delivery" data-select-page="selfDelivery" data-select-warning="selfDeliver">
-											<label for="delivery2">
-												<p>Самовывоз</p>
-											</label>
-										</div>
-									</div>
-									<div class="js-order__page-warning order__column" data-warning="selfDeliver">
-										<div class="order__page-warning">
-											<img src="assets/warning.svg" alt="" class="order__warning-img">
-											<p class="order__warning-text">Самовывоз производится: с пн-сб (7:00-19:00). По адресу г. Казань, ул. Восстания, 100 </p>
-										</div>
-									</div>
-									<hr class="order__hr">
-								</div>
-                            </div>
-							<div class="order__page outer" data-page="delivery">
-								<p class="order__checkboxLine-title">Выберите статус заказчика:</p>
-                                <div class="order__checkboxLine-line">
-									<div class="order__line">
-										<div class="label-block">
-											<input class="js-innerSelect-page" type="radio" id="status1" name="status" checked data-inner-select-page="phys">
-											<label for="status1">
-												<p>Физическое лицо</p>
-											</label>
-										</div>
-										<div class="label-block">
-											<input class="js-innerSelect-page" type="radio" id="status2" name="status" data-inner-select-page="ur">
-											<label for="status2">
-												<p>Юридическое лицо</p>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="order__page inner" data-inner-page="phys">
-									<p class="order__checkboxLine-title">Введите данные заказчика:</p>
-									<div class="order__inputsLine">
-										<!-- Ошибка - error на label__input -->
-										<!-- Правильно - success на label__input -->
-										<label for="name" class="label__input">
-											<input id="name" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Имя</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="secondName" class="label__input">
-											<input id="secondName" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Фамилия</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="tel" class="label__input">
-											<input id="tel" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Номер телефона</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="mail" class="label__input">
-											<input id="mail" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">E-mail</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="city" class="label__input">
-											<input id="city" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Город</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="address" class="label__input">
-											<input id="address" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Адресс доставки</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-									</div>
-								</div>
-								<div class="order__page inner" data-inner-page="ur">
-									<p class="order__checkboxLine-title">Введите данные заказчика:</p>
-									<div class="order__inputsLine">
-										<!-- Ошибка - error на label__input -->
-										<!-- Правильно - success на label__input -->
-										<label for="orgName" class="label__input">
-											<input id="orgName" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Название организации</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="INN" class="label__input">
-											<input id="INN" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">ИНН</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="telUr" class="label__input">
-											<input id="telUr" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Номер телефона</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="mailUr" class="label__input">
-											<input id="mailUr" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">E-mail</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="cityUr" class="label__input">
-											<input id="cityUr" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Город</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="addressUr" class="label__input">
-											<input id="addressUr" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Адресс доставки</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="order__page outer" data-page="selfDelivery">
-								<p class="order__checkboxLine-title">Введите данные заказчика:</p>
-									<div class="order__inputsLine">
-										<!-- Ошибка - error на label__input -->
-										<!-- Правильно - success на label__input -->
-										<label for="nameSelf" class="label__input">
-											<input id="nameSelf" type="text" class="label__input-input">
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Имя</span>
-												<p class="label__placeholder-required dontShow">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-										<label for="telSelf" class="label__input">
-											<input id="telSelf" type="text" class="label__input-input" required>
-											<div class="label__input-placeholder">
-												<span class="label__placeholder">Номер телефона</span>
-												<p class="label__placeholder-required">*</p>
-											</div> 
-											<p class="label__error">Неправельный пароль</p>
-										</label>
-									</div>
-							</div>
-                        </div>
-                        <div class="order__right">
-							<p class="order__right-title">Итого:</p>
-							<p class="order__right-price">27 960 ₽</p>
-							<div class="order__checkboxLine-line">
-								<div class="label-block">
-									<input type="checkbox" id="polit" name="polit" checked>
-									<label class="order__polit" for="polit">
-										<p>Согласен с <a class="polit__underline" href="#">политикой конфиденциальности</a></p>
-									</label>
-								</div>
-							</div>
-							<button type="submit" class="order__submit">Оформить заказ</button>
-						</div>
+                <div class="reset__inner">
+                    <h3 class="reset__title">Восстановление пароля</h3>
+                    <form action="" class="reset__form">
+                        <label for="name" class="label__input reset__input">
+                            <input id="name" type="text" class="label__input-input" required>
+                            <div class="label__input-placeholder">
+                                <span class="label__placeholder">Введите E-mail</span>
+                                <p class="label__placeholder-required">*</p>
+                            </div> 
+                            <p class="label__error">Неправельный пароль</p>
+                        </label>
+                        <button type="submit" class="order__submit reset__submit">Отправить пароль</button>
                     </form>
                 </div>
             </div>
