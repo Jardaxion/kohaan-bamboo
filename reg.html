@@ -332,48 +332,133 @@
 							<p>Личный кабинет</p>
 						</li>
 					</ul>
+                    <h1 class="page-name">Регистрация</h1>
 				</div>
 			</div>
 		</div>
 
-        <div class="auth-wrapper">
+        <div class="reg-wrapper">
             <div class="container">
-                <div class="auth__inner">
-                    <div class="auth__left">
-                        <h3 class="auth__title">Авторизация</h3>
-                        <form action="" class="auth__form">
-                            <!-- Ошибка - error на label__input -->
-							<!-- Правильно - success на label__input -->
-                            <label for="name" class="label__input auth__input">
-                                <input id="name" type="text" class="label__input-input" required>
-                                <div class="label__input-placeholder">
-                                    <span class="label__placeholder">E-mail</span>
-                                    <p class="label__placeholder-required">*</p>
-                                </div> 
-                                <p class="label__error">Неправельный пароль</p>
-                            </label>
-                            <label for="name" class="label__input auth__input">
-                                <input id="name" type="text" class="label__input-input" required>
-                                <div class="label__input-placeholder">
-                                    <span class="label__placeholder">Пароль</span>
-                                    <p class="label__placeholder-required">*</p>
-                                </div> 
-                                <p class="label__error">Неправельный пароль</p>
-                            </label>
-                            <button type="submit" class="order__submit auth__button">Войти</button>
-                        </form>
-                        <div class="auth__button-wrapper">
-                            <a href="" class="auth__link">Забыл пароль</a>
+                <div class="reg__inner">
+                    <form action="" class="reg__form">
+                        <div class="reg__block">
+                            <h3 class="reg__title">Персональные данные:</h3>
+                            <div class="reg__block-content">
+                                <label for="surName" class="label__input">
+                                    <input id="surName" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Фамилия</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="name" class="label__input">
+                                    <input id="name" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Имя</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="thirdName" class="label__input">
+                                    <input id="thirdName" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Отчество</span>
+                                        <p class="label__placeholder-required dontShow">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="email" class="label__input">
+                                    <input id="email" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">E-mail</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="number" class="label__input">
+                                    <input id="number" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Номер телефона</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="nameOrg" class="label__input">
+                                    <input id="nameOrg" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Название организации</span>
+                                        <p class="label__placeholder-required dontShow">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <hr class="auth__hr">
-                    <div class="auth__right">
-                        <h3 class="auth__title">Регистарция</h3>
-                        <p class="auth__description">Регистрация личного кабинета позволит вам совершаться оптовые закупки, пользоваться скидками для оптовиков и отслеживать статус вашего заказа.</p>
-                        <div class="auth__button-wrapper">
-                            <a href="" class="auth__button-link">Зарегестрироваться</a>
+                        <hr class="reg__hr">
+                        <div class="reg__block">
+                            <h3 class="reg__title">Адрес доставки:</h3>
+                            <div class="reg__block-content">
+                                <label for="surName" class="label__input">
+                                    <input id="surName" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Страна</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="name" class="label__input">
+                                    <input id="name" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Город</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="thirdName" class="label__input full">
+                                    <input id="thirdName" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Адрес</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                            </div>
                         </div>
-                    </div>
+                        <hr class="reg__hr">
+                        <div class="reg__block">
+                            <h3 class="reg__title">Пароль:</h3>
+                            <div class="reg__block-content">
+                                <label for="surName" class="label__input">
+                                    <input id="surName" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Введите пароль</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                                <label for="name" class="label__input">
+                                    <input id="name" type="text" class="label__input-input">
+                                    <div class="label__input-placeholder">
+                                        <span class="label__placeholder">Повторите пароль</span>
+                                        <p class="label__placeholder-required">*</p>
+                                    </div> 
+                                    <p class="label__error">Неправельный пароль</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="reg__capcha">
+                            <img src="assets/Bitmap.png" alt="" class="reg__capcha-img">
+                        </div>
+                        <div class="order__checkboxLine-line">
+                            <div class="label-block">
+                                <input type="checkbox" id="polit" name="polit" checked>
+                                <label class="order__polit" for="polit">
+                                    <p>Согласен с <a class="polit__underline" href="#">политикой конфиденциальности</a></p>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="order__submit reg__button">Зарегестрироваться</button>
+                    </form>
                 </div>
             </div>
         </div>

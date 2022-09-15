@@ -145,6 +145,14 @@ input[type="radio"]{
     overflow-x: visible;
 }
 
+.label__input.full{
+    width: 100%;
+}
+
+.label__input.full .label__input-input{
+    width: 100% !important;
+}
+
 .label__input.error .label__input-input{
     border-color: #F77623 !important;
 }
@@ -371,8 +379,51 @@ input[type="checkbox"]{
     padding: 13px 44px;
     color: black;
     text-decoration: none;
-    margin: 20px auto 40px;
+    margin: 20px auto 120px;
     font-weight: 500;
+    transition: .3s all;
+}
+
+.thanks__link:hover{
+    background: #AC8826;
+}
+
+.reg__inner{
+    margin-bottom: 70px;
+}
+
+.reg__form{
+    width: 764px;
+}
+
+.reg__block{
+    width: 100%;
+}
+
+.reg__block-content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.reg__title{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 17px 0px 27px;
+}
+
+.reg__hr{
+    margin-top: 10px;
+    border: 1px solid #303030;
+    width: 740px;
+}
+
+.reg__capcha{
+    margin-top: 20px;
+}
+
+.reg__button{
+    margin-top: 30px;
 }
 
 @media (max-width: 1199px){
@@ -389,6 +440,15 @@ input[type="checkbox"]{
     .auth__description{
         font-size: 14px;
         width: 279px;
+    }
+
+    .reg__form{
+        width: 100%;
+    }
+
+    .reg__block-content .label__input,
+    .reg__block-content .label__input-input{
+        width: 100% !important;
     }
 }
 
