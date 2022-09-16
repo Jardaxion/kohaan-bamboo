@@ -114,6 +114,7 @@ input[type="radio"]{
     border-radius: 24px !important;
     padding: 14px 24px !important;
     margin: 0 !important;
+    color: white !important;
 }
 
 .label__input-placeholder{
@@ -254,7 +255,6 @@ input[type="checkbox"]{
     transition: .3s all;
     font-weight: 400;
     font-size: 18px;
-
     font-family: 'Montserrat';
 }
 
@@ -279,7 +279,6 @@ input[type="checkbox"]{
 
 .auth__title{
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .auth__form{
@@ -287,6 +286,7 @@ input[type="checkbox"]{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 20px;
 }
 
 .auth__hr{
@@ -319,6 +319,7 @@ input[type="checkbox"]{
     text-decoration: none;
     margin: 20px auto 0;
     transition: .3s all;
+    font-size: 18px;
 }
 
 .auth__button-link:hover{
@@ -450,6 +451,10 @@ input[type="checkbox"]{
     .reg__block-content .label__input-input{
         width: 100% !important;
     }
+
+    .reg__hr{
+        width: 95%;
+    }
 }
 
 @media(max-width: 640px){
@@ -489,6 +494,27 @@ input[type="checkbox"]{
         margin-bottom: 20px;
     }
 
+    .order__right-title,
+    .order__right-price{
+        text-align: center;
+    }
+
+    .order__page-warning{
+        align-items: flex-start;
+    }
+
+    .order__warning-img{
+        margin-top: 2px;
+    }
+
+    .order__right .label-block{
+        margin: 0 auto;
+    }
+
+    .order__right .order__checkboxLine-line{
+        justify-content: center;
+    }
+
     .auth__inner{
         flex-direction: column;
     }
@@ -512,8 +538,16 @@ input[type="checkbox"]{
         margin: 20px 0;
     }
 
+    .auth__link{
+        margin: 0 auto;
+    }
+
     .reset__submit{
         width: 100%;
+    }
+
+    .thanks__text{
+        font-size: 14px;
     }
 }
 
@@ -525,5 +559,17 @@ input[type="checkbox"]{
     .order__checkboxLine-line .label-block:not(:first-of-type){
         margin-left: 0;
         margin-top: 5px;
+    }
+
+    .order__line .label-block:not(:last-of-type){
+        margin-bottom: 26px;
+    }
+
+    .order__checkboxLine-title{
+        font-size: 16px;
+    }
+
+    .order__checkboxLine-line{
+        padding-left: 15%;
     }
 }
