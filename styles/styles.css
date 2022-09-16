@@ -453,7 +453,11 @@ input[type="checkbox"]{
     }
 
     .reg__hr{
-        width: 95%;
+        width: 100%;
+    }
+
+    .label__input{
+        margin-right: 0;
     }
 }
 
@@ -548,6 +552,10 @@ input[type="checkbox"]{
 
     .thanks__text{
         font-size: 14px;
+    }
+
+    .label__input{
+        margin-right: 0;
     }
 }
 
