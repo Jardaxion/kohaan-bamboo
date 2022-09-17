@@ -693,6 +693,10 @@ input[type="checkbox"]{
         padding-left: 0;
         text-align: center;
     }
+
+    .profile__form{
+        width: 100%;
+    }
 }
 
 @media(max-width: 738px){
